@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Codefile="Admihome.Master.cs" Inherits="boat11.Site2" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>BoAts</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoup.jpg" alt="logo" />
+
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">   </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <link href="css/Custome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript"> </script>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+                </head>
+    <br /><br />
+    <body>
+
+    <form id="form1" runat="server">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" >
+                <div class="container-fluid" style="color: red">
+                    <div class="navbar-header" style="font-size: 20px; font-weight: bolder; font-style: oblique">
+                        <button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand">
+                            <span>
+                                <a href="default2.aspx" style="color: red; font-style: oblique">
+
+                                    <img class="img-" src="images/logo.jpg" alt="BoAt-Lifestyle" height="50" width="100" color: red" />
+                                </a>
+                            </span>
+
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="addproduct.aspx">Add Product</a></li>
+                           <!---  <li><a href="Deleteproduct.aspx">Delete Product</a> </li>---> 
+                            <li><a href="Adminhome.aspx">Details</a> </li>
+                            <li><a href="Adminhome.aspx#feedbacks">feedbacks</a> </li>
+
+                            <asp:Button ID="btnLogin" CssClass="btn btn-default navbar-btn " runat="server" Text="Sign In"  />
+                            <asp:Button ID="btnlogout" CssClass="btn btn-default navbar-btn " runat="server" Text="Log Out" OnClick="btnlogout_Click" />
+                        </ul>
+                        &nbsp &nbsp &nbsp
+                    <asp:Button ID="Button1" runat="server" BorderColor="Red" BorderStyle="Solid" OnClick="Button1_Click" Font-Size="XX-Large" />
+                    </div>
+                    
+                </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+         <!---Footer COntents Start here---->
+        
+        <hr />
+        <footer>
+            <div class="container ">
+                <p class="pull-right ">
+                    <a href="#"style="color:black">Back to top</a></p>
+                <p style="color:red">
+                    &copy;2022@BoAts &middot; 
+                    <a href="default.aspx"style="color:black">Home</a>
+                    &middot;<a href="About.aspx"style="color:black">About</a>&middot;
+                    <a href="products.aspx"style="color:black">Products</a>&middot;
+                </p>
+            </div>
+
+        </footer>
+        <!---Footer COntents End---->
+    </form>
+    </body>
+</html>

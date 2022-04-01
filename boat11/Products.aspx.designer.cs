@@ -11,34 +11,34 @@ namespace boat11
 {
 
 
-    public partial class _default
+    public partial class WebForm6
     {
 
         /// <summary>
-        /// form2 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// A control.
+        /// txtFilterGrid1Record control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl A;
+        protected global::System.Web.UI.WebControls.TextBox txtFilterGrid1Record;
 
         /// <summary>
-        /// B control.
+        /// rptrProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl B;
+        protected global::System.Web.UI.WebControls.Repeater rptrProducts;
     }
 }
